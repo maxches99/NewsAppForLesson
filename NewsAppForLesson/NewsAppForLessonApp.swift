@@ -11,7 +11,7 @@ import SwiftUI
 struct NewsAppForLessonApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HelloConfigurator.configure()
         }
     }
 }

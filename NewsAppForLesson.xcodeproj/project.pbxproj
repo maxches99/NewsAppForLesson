@@ -14,6 +14,12 @@
 		82CCE4F527665DEE0005F18C /* NewsAppForLessonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CCE4F427665DEE0005F18C /* NewsAppForLessonTests.swift */; };
 		82CCE4FF27665DEE0005F18C /* NewsAppForLessonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CCE4FE27665DEE0005F18C /* NewsAppForLessonUITests.swift */; };
 		82CCE50127665DEE0005F18C /* NewsAppForLessonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CCE50027665DEE0005F18C /* NewsAppForLessonUITestsLaunchTests.swift */; };
+		82CCE5102766611F0005F18C /* HelloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CCE50F2766611F0005F18C /* HelloView.swift */; };
+		82CCE5192766618B0005F18C /* HelloPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CCE5182766618B0005F18C /* HelloPresenter.swift */; };
+		82CCE51B2766619A0005F18C /* HelloInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CCE51A2766619A0005F18C /* HelloInteractor.swift */; };
+		82CCE51D276661A60005F18C /* HelloRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CCE51C276661A60005F18C /* HelloRouter.swift */; };
+		82CCE51F276661B40005F18C /* HelloModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CCE51E276661B40005F18C /* HelloModel.swift */; };
+		82CCE521276661C10005F18C /* HelloConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CCE520276661C10005F18C /* HelloConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		82CCE4FA27665DEE0005F18C /* NewsAppForLessonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsAppForLessonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82CCE4FE27665DEE0005F18C /* NewsAppForLessonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAppForLessonUITests.swift; sourceTree = "<group>"; };
 		82CCE50027665DEE0005F18C /* NewsAppForLessonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAppForLessonUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		82CCE50F2766611F0005F18C /* HelloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloView.swift; sourceTree = "<group>"; };
+		82CCE5182766618B0005F18C /* HelloPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloPresenter.swift; sourceTree = "<group>"; };
+		82CCE51A2766619A0005F18C /* HelloInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloInteractor.swift; sourceTree = "<group>"; };
+		82CCE51C276661A60005F18C /* HelloRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloRouter.swift; sourceTree = "<group>"; };
+		82CCE51E276661B40005F18C /* HelloModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloModel.swift; sourceTree = "<group>"; };
+		82CCE520276661C10005F18C /* HelloConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +106,7 @@
 		82CCE4E227665DED0005F18C /* NewsAppForLesson */ = {
 			isa = PBXGroup;
 			children = (
+				82CCE50E276661080005F18C /* Modules */,
 				82CCE4E327665DED0005F18C /* NewsAppForLessonApp.swift */,
 				82CCE4E527665DED0005F18C /* ContentView.swift */,
 				82CCE4E727665DEE0005F18C /* Assets.xcassets */,
@@ -125,6 +138,75 @@
 				82CCE50027665DEE0005F18C /* NewsAppForLessonUITestsLaunchTests.swift */,
 			);
 			path = NewsAppForLessonUITests;
+			sourceTree = "<group>";
+		};
+		82CCE50D276660FC0005F18C /* Hello */ = {
+			isa = PBXGroup;
+			children = (
+				82CCE516276661570005F18C /* Configurator */,
+				82CCE515276661500005F18C /* Model */,
+				82CCE5142766614A0005F18C /* Router */,
+				82CCE513276661430005F18C /* Interactor */,
+				82CCE5122766613B0005F18C /* Presenter */,
+				82CCE511276661250005F18C /* View */,
+			);
+			path = Hello;
+			sourceTree = "<group>";
+		};
+		82CCE50E276661080005F18C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				82CCE50D276660FC0005F18C /* Hello */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		82CCE511276661250005F18C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				82CCE50F2766611F0005F18C /* HelloView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		82CCE5122766613B0005F18C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				82CCE5182766618B0005F18C /* HelloPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		82CCE513276661430005F18C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				82CCE51A2766619A0005F18C /* HelloInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		82CCE5142766614A0005F18C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				82CCE51C276661A60005F18C /* HelloRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		82CCE515276661500005F18C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				82CCE51E276661B40005F18C /* HelloModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		82CCE516276661570005F18C /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				82CCE520276661C10005F18C /* HelloConfigurator.swift */,
+			);
+			path = Configurator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +339,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82CCE5102766611F0005F18C /* HelloView.swift in Sources */,
+				82CCE521276661C10005F18C /* HelloConfigurator.swift in Sources */,
 				82CCE4E627665DED0005F18C /* ContentView.swift in Sources */,
+				82CCE51B2766619A0005F18C /* HelloInteractor.swift in Sources */,
+				82CCE51F276661B40005F18C /* HelloModel.swift in Sources */,
+				82CCE51D276661A60005F18C /* HelloRouter.swift in Sources */,
 				82CCE4E427665DED0005F18C /* NewsAppForLessonApp.swift in Sources */,
+				82CCE5192766618B0005F18C /* HelloPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
